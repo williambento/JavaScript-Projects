@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#calculadora {
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+#display{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1 solid #ccc;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    background-color: rgb(13, 134, 124);
+    border-radius: 20px 20px 0px 0px;
+    box-sizing: border-box;
+}
+
+#displayInput{
+    text-align: right;
+    width: 100%;
+    border: none;
+    background-color: rgb(13, 134, 124);
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+}
+
+#teclado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button{
+    height: 60px;
+    border: none;
+    transition: 0.3s;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #c5c5c5;
+}
+
+.num, .ponto, .igual{
+    color: rgb(13, 134, 124);
+}
+
+.operador{
+    color:rgb(219, 94, 17)
+}
+
+#reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(13, 134, 124);
+    color:#fff;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#reset:hover{
+    background-color: #c5c5c5;
+}
